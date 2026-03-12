@@ -14,10 +14,6 @@ def main(page: ft.Page):
     label="Nombre",
     hint_text="Ingresa tu nombre",
 )
-    correo=ft.TextField(
-    label="Correo",
-    hint_text="Ingresa tu correo",
-)
 
     password=ft.TextField(
     label="Contraseña",
@@ -27,16 +23,23 @@ def main(page: ft.Page):
 
 )
     boton=ft.ElevatedButton(
-    text="Guardar",
+    text="Iniciar Sesion",
     icon=ft.Icons.SAVE,
     color=ft.Colors.WHITE,
 )
+    mensaje = ft.Text(
+        "Olvidaste contraseña",
+        size=30,
+        weight=ft.FontWeight.BOLD,
+        text_align=ft.TextAlign.CENTER
+    )
     page.add(
     titulo,
     nombre,
     correo,
     password,
-    boton
+    boton,
+    mensaje
 )
 
 ft.run(main)
