@@ -32,6 +32,12 @@ def main(page: ft.Page):
     icon=ft.Icons.SAVE,
     color=ft.Colors.WHITE,
 )
-
+    page.add(
+    titulo,
+    nombre,
+    correo,
+    password,
+    boton
+)
 
 ft.app(main)
