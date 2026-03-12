@@ -28,7 +28,11 @@ def main(page: ft.Page):
     can_reveal_password=True,
 
 )
-
+    boton=ft.ElevatedButton(
+    text="Guardar",
+    icon=ft.Icons.SAVE,
+    color=ft.Colors.WHITE,
+)
 
 
 ft.app(main)
