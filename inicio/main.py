@@ -10,7 +10,6 @@ def main(page: ft.Page):
         size=30,
         weight=ft.FontWeight.BOLD,
         text_align=ft.TextAlign.CENTER
-        
     )
     nombre=ft.TextField(
     label="Nombre",
