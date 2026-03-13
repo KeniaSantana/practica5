@@ -51,10 +51,10 @@ def main(page: ft.Page):
 
 
     def login_click(e):
-        usuario = txt_usuario.value
-        contrasena = txt_contrasena.value
+        usuario = usuario.value
+        contraseña = contraseña.value
 
-        if usuario == USUARIO_VALIDO and contrasena == CONTRASENA_VALIDA:
+        if usuario == USUARIO_VALIDO and contraseña == CONTRASENA_VALIDA:
             mostrar_panel()
         else:
             page.snack_bar = ft.SnackBar(ft.Text("Usuario o contraseña incorrectos"))
