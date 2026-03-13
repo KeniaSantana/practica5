@@ -69,26 +69,26 @@ def main(page: ft.Page):
         page.update()
 
 
-    txt_usuario = ft.TextField(
+    usuario = ft.TextField(
         label="Usuario",
         width=300,
         prefix_icon=ft.Icons.PERSON
     )
 
-    txt_contrasena = ft.TextField(
+    contraseña = ft.TextField(
         label="Contraseña",
         password=True,
         width=300,
         prefix_icon=ft.Icons.LOCK
     )
 
-    btn_login = ft.ElevatedButton(
+    login = ft.ElevatedButton(
         "Iniciar Sesión",
         on_click=login_click,
         width=200
     )
 
-    link_forgot = ft.TextButton(
+    forgot = ft.TextButton(
         "¿Olvidaste tu contraseña?",
         on_click=forgot_click
     )
@@ -99,10 +99,10 @@ def main(page: ft.Page):
             [
                 ft.Icon(ft.Icons.PERSON, size=80),
                 ft.Text("Iniciar Sesión", size=30, weight=ft.FontWeight.BOLD),
-                txt_usuario,
-                txt_contrasena,
-                btn_login,
-                link_forgot,
+                usuario,
+                contraseña,
+                login,
+                forgot,
             ],
             alignment=ft.MainAxisAlignment.CENTER,
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
